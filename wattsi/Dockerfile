@@ -9,7 +9,7 @@ RUN apt-get update && \
     cd / && \
     git clone https://github.com/whatwg/wattsi && \
     cd wattsi && \
-    ./build.sh && \
+    (./build.sh || ls bin/wattsi) && \
     cp bin/wattsi /bin/ && \
     cd / && \
     rm -fr fpc-3.0.0rc1.x86_64-linux.tar fpc-3.0.0rc1.x86_64-linux wattsi && \
