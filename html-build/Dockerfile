@@ -7,4 +7,6 @@ RUN apt-get update && \
 RUN git clone https://github.com/whatwg/html-build
 
 WORKDIR /html-build
-RUN ./build.sh && rm -fr ./output ./html && ls -a
+RUN ./build.sh && \
+    touch .cache/unicode.xml && \
+    rm -fr ./output ./html
