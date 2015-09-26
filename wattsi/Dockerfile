@@ -6,7 +6,7 @@ RUN apt-get update && \
     tar vxf fpc-3.0.0rc1.x86_64-linux.tar && \
     cd fpc-3.0.0rc1.x86_64-linux && \
     ./install.sh && \
-    cd / &&
+    cd / && \
     git clone https://github.com/whatwg/wattsi && \
     cd wattsi && \
     ./build.sh && \
