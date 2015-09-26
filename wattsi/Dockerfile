@@ -1,7 +1,7 @@
 FROM debian:sid
 
 RUN apt-get update && \
-    apt-get install -y curl binutils git && \
+    apt-get install -y curl binutils git time && \
     curl ftp://freepascal.stack.nl/pub/fpc/beta/3.0.0-rc1/x86_64-linux/fpc-3.0.0rc1.x86_64-linux.tar > fpc-3.0.0rc1.x86_64-linux.tar && \
     tar vxf fpc-3.0.0rc1.x86_64-linux.tar && \
     cd fpc-3.0.0rc1.x86_64-linux && \
