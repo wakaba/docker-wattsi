@@ -1,0 +1,30 @@
+docker-wattsi
+~~~~~~~~~~~~~
+
+|Dockerfile|s for Wattsi and html-build.
+
+* Usage
+
+  $ docker pull wakaba/docker-wattsi:html-build && \
+    docker run -v `pwd`/output:/html-build/output \
+               -v `pwd`/html:/html-build/html \
+               -i -t wakaba/docker-wattsi:html-build ./build.sh
+
+  $ docker pull wakaba/docker-wattsi:wattsi && \
+    docker run -i wakaba/docker-wattsi:wattsi wattsi ...
+
+* Repository
+
+GitHub <https://github.com/wakaba/docker-wattsi>.
+
+Docker Hub <https://registry.hub.docker.com/u/wakaba/docker-wattsi/>.
+
+* See also
+
+<https://github.com/whatwg/wattsi>
+<https://github.com/whatwg/html-build>
+<https://github.com/whatwg/html>
+
+* License
+
+The files in this Git repository are in the Public Domain.
